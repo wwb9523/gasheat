@@ -1,0 +1,28 @@
+<taglib name="YC"/>
+    <include file="Public:contentHeader"/>
+
+<div class="listright">
+    <div class="listrightin">
+        <div class="ltitle">
+            <div class="lrtitle">
+                    <span class="lrlink">
+                        <a href="__ROOT__" class="home">首页</a>
+                        <volist name="top_link" id="link">
+                          <a  class="tl" href="{:U('News/index',array('item'=>$link['id']))}">&nbsp;&gt;&nbsp;{$link['title']}</a>
+                        </volist>
+                    </span>
+                <span class="cName">{$contentDetail.categoryName}</span></div>
+        </div>
+        <div class="page_content">
+            <div class="texttitle">{$contentDetail.title}</div>
+            <div class="texttime">发布时间：{$contentDetail.create_time|date="Y-m-d",###}&thinsp;&nbsp;&nbsp;查看次数：{$contentDetail.view_count}</div>
+            <div class="textbox">
+                {$contentDetail.content}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <include file="Public:footer" />
+</body>
+</html>

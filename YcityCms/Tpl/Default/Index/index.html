@@ -1,0 +1,134 @@
+<taglib name="YC"/>
+<include file="Public:header" />
+<div class="newsboxout">
+
+    <div class="introduce">
+        <div class="title">
+            <a href="{:U('News/index',array('item'=>$collegeNews[0]['parentId']))}" class="nmore">更多>></a>
+            <span class="nfont">指导小组介绍</span>
+        </div>
+        <div class="content">
+            {$introduce[0]['content']}
+        </div>
+    </div>
+
+<div class="meeting">
+    <div class="meetingIn">
+                <div class="college_title">
+                    <a href="{:U('News/index',array('item'=>$meetingParentId))}" class="nmore">更多>></a>
+                    <div class="title_left">
+                    <span class="nfont">{$meetingTitle}</span>
+                        </div>
+                </div>
+                <table cellpadding="0" cellspacing="0" class="list">
+                        <volist name="meeting" id="row">
+                            <tr>
+                                <td class="list_ico"><img src="__PUBLIC__/Images/list_ico.png" class="newsico"/></td>
+                                <td class="list_a">
+                                    <if condition="$row['link_url'] neq ''">
+                                        <a href="{$row.link_url}" title="{$row.title}">{$row.title|msubstr=0,18}</a>
+                                        <else/>
+                                        <a href="{:U('News/detail',array('item'=>$row['id']))}" title="{$row.title}">{$row.title|msubstr=0,18}</a>
+                                    </if>
+                                </td>
+                                <td class="list_time">{$row.create_time|date="Y-m-d",###}</td>
+                            </tr>
+                        </volist>
+                </table>
+            </div>
+        </div>
+    </div>
+            <div class="institute">
+                <div class="instituteIn">
+                <div class="ititle">
+                    <a href="{:U('News/index',array('item'=>$overviewParentId))}" class="imore">更多>></a>
+                    <span class="ifont">{$overviewTitle}</span>
+                </div>
+                <table cellpadding="0" cellspacing="0" class="nlist">
+                    <volist name="overview" id="ed">
+                        <tr>
+                            <td class="list_ico"><img src="__PUBLIC__/Images/list_ico.png"/></td>
+                            <td class="list_a">
+                                <if condition="$ed['link_url'] neq ''">
+                                    <a href="{$ed['link_url']}" title="{$ed['title']}">{$ed['title']|msubstr=0,25}</a>
+                                    <else/>
+                                    <a href="{:U('News/detail',array('item'=>$ed['id']))}" title="{$ed['title']}">{$ed['title']|msubstr=0,25}</a>
+                                </if>
+                            </td>
+                        </tr>
+                    </volist>
+                </table>
+                </div>
+            </div>
+
+            <div class="institute_s">
+                <div class="instituteIn">
+                <div class="ititle">
+                    <a href="{:U('News/index',array('item'=>$teacherParentId))}" class="imore">更多>></a>
+                    <span class="ifont">{$teacherTitle}</span>
+                </div>
+                <table cellpadding="0" cellspacing="0" class="nlist">
+                    <volist name="teacher" id="ed">
+                        <tr>
+                            <td class="list_ico"><img src="__PUBLIC__/Images/list_ico.png"/></td>
+                            <td class="list_a">
+                                <if condition="$ed['link_url'] neq ''">
+                                    <a href="{$ed['link_url']}" title="{$ed['title']}">{$ed['title']|msubstr=0,25}</a>
+                                    <else/>
+                                    <a href="{:U('News/detail',array('item'=>$ed['id']))}" title="{$ed['title']}">{$ed['title']|msubstr=0,25}</a>
+                                </if>
+                            </td>
+                        </tr>
+                    </volist>
+                </table>
+            </div>
+                </div>
+
+
+            <div class="institute">
+                <div class="instituteIn">
+                <div class="ititle">
+                    <a href="{:U('News/index',array('item'=>$interflowParentId))}" class="imore">更多>></a>
+                    <span class="ifont">{$interflowTitle}</span>
+                </div>
+                <table cellpadding="0" cellspacing="0" class="nlist">
+                    <volist name="interflow" id="ed">
+                        <tr>
+                            <td class="list_ico"><img src="__PUBLIC__/Images/list_ico.png"/></td>
+                            <td class="list_a">
+                                <if condition="$ed['link_url'] neq ''">
+                                    <a href="{$ed['link_url']}" title="{$ed['title']}">{$ed['title']|msubstr=0,25}</a>
+                                    <else/>
+                                    <a href="{:U('Down/detail',array('item'=>$ed['id']))}" title="{$ed['title']}">{$ed['title']|msubstr=0,25}</a>
+                                </if>
+                            </td>
+                        </tr>
+                    </volist>
+                </table>
+                    </div>
+            </div>
+
+        <div class="institute_s">
+            <div class="instituteIn">
+            <div class="ititle">
+                <a href="{:U('News/index',array('item'=>$exhibitionParentId))}" class="imore">更多>></a>
+                <span class="ifont">{$exhibitionTitle}</span>
+            </div>
+            <table cellpadding="0" cellspacing="0" class="nlist">
+                <volist name="exhibition" id="ed">
+                    <tr>
+                        <td class="list_ico"><img src="__PUBLIC__/Images/list_ico.png"/></td>
+                        <td class="list_a">
+                            <if condition="$ed['link_url'] neq ''">
+                                <a href="{$ed['link_url']}" title="{$ed['title']}">{$ed['title']|msubstr=0,25}</a>
+                                <else/>
+                                <a href="{:U('News/detail',array('item'=>$ed['id']))}" title="{$ed['title']}">{$ed['title']|msubstr=0,25}</a>
+                            </if>
+                        </td>
+                    </tr>
+                </volist>
+            </table>
+        </div>
+            </div>
+</div>
+<include file="Public:footer" />

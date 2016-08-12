@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+html{ height: 100%;}
+body { margin:0 auto;text-align:left; width: 100%;height: 100%;}
+/*Opera Fix*/
+/*body:before {height:100%;float:left;width:0;margin-top:-32767px;}*/
+body, dl, dt, dd, ol, ul, pre, form, field, p, blockquote, th, td, h1, h2, h3, h4, h5, h6 { font-family: "Microsoft Yahei", "宋体", Helvetica, Arial, sans-serif;margin:0; padding:0; }
+
+.body1 { text-align:left;}
+/*a:link, a:visited { text-decoration:none; color:#41526b }*/
+a:link, a:visited {  text-decoration: none;  }
+a:hover, a:active { text-decoration:underline; color:#c90303;}
+ul, ol { list-style:none;}
+input, textarea, select, button, file {	font-size:12px;}
+img { border:0;}
+p, li {	line-height:1.8em;}
+.clear { clear:both}
+.fw { font-weight:bolder}
+.clearfix:before,.clearfix:after { content:""; display:table;}
+.clearfix:after { clear:both; }/* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom:1; }
+.list_a a{color: #0885ef!important;}
+
+
+
+.main { margin:0px auto; width:1000px; height:auto;position: relative;}
+.main:after{content: "\200B";  display: block;  height: 0;  clear: both;}
+.header_line{background-color: #f3f3f3;width: auto; margin: 0px;  height: 37px; border-bottom: #e2e2e2 1px solid; }
+.headerIn{width: 1000px;  height:37px; margin: 0px auto;}
+.header_line .contain{    clear: both;  float: right;  margin-right: 16px;  height: 37px;  line-height: 37px;}
+.header_line .contain .login_pic{margin-right: 5px;float: left;    margin-top: 8px;}
+.header_line .contain .user_name{line-height: 37px;}
+.header_line .contain .upload_file{background-color: #2c61c1;border-radius: 100px;font-size: 12px; text-decoration: blink;width: 131px;height: 28px;display: block;float: left; text-align: center;color: #ffffff;line-height: 28px;}
+.header_line .contain a{  position: relative;top: 5px;color: #0a7aec; text-decoration: blink; cursor: pointer;}
+.header_line .contain a.login{margin-right: 50px;}
+.header_line .contain .user {  float: left;  display: block;  margin-right: 25px;  text-decoration: none;  }
+.header_line .contain .user .hidden{display: none;}
+.header_line .contain .user li{text-align: center;}
+
+.banner {  width: 1000px;  height: 104px;  margin: 0px auto;    }
+.logo {  width: 100px;  height: 82px;  padding-top: 33px;  padding-left: 27px;  float: left}
+.banner .header_font{font-size: 36px; font-weight: bolder; color: #000000;line-height: 104px;    padding-left: 45px; font-family: "Microsoft Yahei", sans-serif;}
+
+.nav_out{width: 100%;background: #2c61c1;}
+.nav { height:55px; width:1000px; margin:0px auto;  }
+.nav li {  height:55px; line-height:55px; color:#fff; text-align:center; float:left; position:relative; z-index: 1; background: url("../Images/white_line.png")no-repeat 0 20px;}
+.nav li.home {  background: none;  }
+.nav li a { height:55px;line-height:55px; color: #fff;  font-size: 14px;  display: block;   _float:left;margin-left: 33px;margin-right: 33px; font-weight: 100; }
+.nav li a:hover, #nav li a.on{ color: #fff; text-decoration:none;}
+
+
+.main .newsboxout { width: 1000px;  height: 354px;   margin-top: 18px; border: #e0e0e0 1px solid;}
+
+.main .introduce { width:543px; height:354px;   float:left; _display:inline; border-right: #e0e0e0 1px solid; }
+.main .introduce .title { width:543px; height:41px; border-bottom: #e0e0e0 1px solid; }
+.main .introduce .title .nfont { font-size:14px; font-weight:bolder; color: #000000; line-height:42px; margin-left:24px;   _display:inline; }
+.main .introduce .title .nmore { font-size:14px; color: #a5a5a5;  float:right; _display:inline; margin-right:20px; line-height:42px}
+.main .introduce .content {font-size: 14px; padding-top: 20px; padding-left: 17px; padding-right: 22px; padding-bottom: 18px;overflow: hidden;}
+.introduce .content .img{width: 191px; height: 128px; float: left;}
+.introduce .content img{border-right: white 20px solid;}
+.introduce .content p span{font-size: 14px!important; color: #525252}
+
+.main .meeting { width:455px; height:354px;   float:right; _display:inline;  }
+.main .meeting table tr {  line-height: 30px;  height:30px; }
+.main .meeting .college_title { width:455px; height:41px;  float: left; }
+.main .meeting .college_title .title_left {  width: 110px;    height: 31px;  }
+.main .meeting .college_title .nfont { font-size:14px; font-weight:bolder; color: #000000; line-height:42px; margin-left:20px;   _display:inline;}
+.main .meeting .college_title .nmore { font-size:14px; color: #a5a5a5;  float:right; _display:inline; margin-right:25px; line-height:42px}
+.main .meeting .list { width:455px; max-height:310px; font-size: 14px; padding-bottom: 26px;padding-top: 13px;padding-right: 24px;}
+.main .meeting .list .list_ico {width:  38px; height:  30px; text-align:center;margin-left: 20px; }
+.main .meeting .list .list_ico.newsico{    width: 4px;  height: 4px;}
+.main .meeting .list .list_a { /*width:280px;*/ line-height:30px ;font-size: 14px;  height:30px; display: inline; }
+.main .meeting .list .list_time { /*width:70px; */line-height:30px; color: #9090a1;  font-size: 14px ;height: 30px;}
+.colorhui {  color: #a2a1a1;  }
+
+.main .institute_s { width:490px; height:256px; float:right; _display:inline; margin-top:13px;border: #e0e0e0 1px solid;}
+
+.main .institute { width:490px; height:256px; float:left; _display:inline; margin-top:13px;border: #e0e0e0 1px solid;}
+.ititle { width:490px; height:41px; border-bottom: #e0e0e0 1px solid;letter-spacing: 2px;}
+.ititle .ifont { font-size:14px; font-weight:bolder;  line-height:41px; position: relative;top:5px;left: 23px;color: #000000;}
+.ititle .imore {  font-size:14px; color: #a5a5a5; float:right; margin-right:20px; line-height:41px;text-align: center;display: block;    position: relative;  top: 5px;}
+.nlist { width:490px;  margin-top: 15px; padding-bottom: 20px;}
+.nlist .list_ico { width: 40px;  text-align: center;}
+.nlist .list_a {  _display:inline; line-height: 23px;  font-size: 14px;letter-spacing: 1px;}
+.nlist tr{line-height: 30px;    height: 30px;}
+
+
+/*.foot_border{
+    background: repeating-linear-gradient(135deg,
+    #eeeeee, #d2d2d2 0.06em,
+    #ececec, #ececec 0.14em
+    );
+    width: 100%;height: 8px; margin-top: 28px;
+    background-color: #ececec;
+
+}*/
+.foot{     width: 100%;  height: 100px;  background: #eeeeee;  clear: both;  margin: 0px auto; margin-top: 28px; border-top: #d2d2d2 8px solid; }
+.foot .ftbox {  width: 1000px;  height: 100px;  margin: 0px auto; text-align: center; }
+.foot .ftfont {  font-size: 12px;  display: inline;  color: #676767;  position: relative;top:16px; }
+.foot .ftfont .img1 {  position: relative;  top: 5px;   }
+
